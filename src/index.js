@@ -3,6 +3,17 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import axios from 'axios';
+
+const API_BASE_URL = 'https://pokeapi.co/api/v2/';
+
+export const fetchSomeData = () => {
+  return axios.get(`${API_BASE_URL}/endpoint`);
+};
+
+export const postData = (data) => {
+  return axios.post(`${API_BASE_URL}/endpoint`, data);
+};
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
