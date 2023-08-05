@@ -2,6 +2,12 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  componentDidMount(){
+    fetch('https://pokeapi.co/api/v2/')
+    .then(response => console.log(response));
+  }
+
   return (
     <div className="App">
       <header className="App-header">
