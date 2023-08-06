@@ -14,7 +14,10 @@ code {
 
 @font-face {
   font-family: 'pokeh';
-  src: url('Pokemon\ Hollow.ttf') format('truetype');
+  src: url('Pokemon Hollow.ttf') format('truetype');
+}
+
+@font-face {
   font-family: 'pokes';
-  src: url('Pokemon\ Solid.ttf') format('truetype');
+  src: url('Pokemon Solid.ttf') format('truetype');
 }

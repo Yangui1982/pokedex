@@ -1,3 +1,14 @@
+.navbar {
+  font-family: 'pokes', sans-serif;
+  background-color: rgb(255, 230, 0);
+  width: 100%;
+  font-size: 35px;
+  padding-left: 10px;
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +46,33 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  width: 25%;
+  border: solid 1px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  font-family: 'pokeh', sans-serif;
+}
+
+.data {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.profil img {
+  height: 128px;
 }
