@@ -51,14 +51,14 @@
 .cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .card {
   display: flex;
   flex-direction: column;
   margin: 20px;
-  width: 25%;
+  width: 22%;
   border: solid 1px;
 }
 
@@ -75,4 +75,25 @@
 
 .profil img {
   height: 128px;
+}
+
+.pages{
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  /* Réinitialisation de toutes les propriétés CSS */
+  all: initial;
+
+  /* Empêcher les styles du navigateur de s'appliquer */
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+
+  /* Réinitialisation des styles spécifiques au bouton (facultatif) */
+  /* ... */
+  font-family: 'pokes', sans-serif;
+  font-size: 35px;
+  width: 40px;
 }
