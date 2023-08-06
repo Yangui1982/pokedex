@@ -64,10 +64,6 @@ const App = () => {
                     {Math.round(data.weight / 4.3)} lbs
                   </div>
                 </div>
-                <div className="divTableRow">
-                  <div className="divTableCell">Number of Battles</div>
-                  <div className="divTableCell">{data.game_indices.length}</div>
-                </div>
               </div>
             </div>
           </div>
