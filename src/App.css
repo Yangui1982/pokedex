@@ -5,10 +5,14 @@
   background-color: #FECA1B;
   width: 100%;
   font-size: 35px;
-  padding-left: 10px;
+
   padding-bottom: 15px;
   margin-bottom: 10px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.navtitle{
+  margin-left: 10px;
 }
 
 .App {
@@ -80,10 +84,18 @@
   height: 128px;
 }
 
-.pages{
+.pages {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
+
 
 button {
   /* Réinitialisation de toutes les propriétés CSS */

@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import axios from 'axios';
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const API_BASE_URL = 'https://pokeapi.co/api/v2/';
 

@@ -1,5 +1,4 @@
-import React, {useState, useEffect} from "react";
-
+import React, { useState, useEffect } from "react";
 
 const PokemonCard = ({ name, url }) => {
   const [pokemonData, setPokemonData] = useState(null);
@@ -18,7 +17,7 @@ const PokemonCard = ({ name, url }) => {
     fetchData();
   }, [url]);
 
-    return (
+  return (
     <div className="card">
       {pokemonData ? (
         <>
@@ -42,3 +41,5 @@ const PokemonCard = ({ name, url }) => {
     </div>
   );
 };
+
+export default PokemonCard;
