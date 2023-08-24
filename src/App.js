@@ -150,6 +150,7 @@ const App = () => {
   const [pokemonData, setPokemonData] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const cardsPerPage = 8;
+  const pageNeighbours = 3;
 
   useEffect(() => {
     const fetchData = async () => {
@@ -165,8 +166,6 @@ const App = () => {
     fetchData();
   }, []);
 
-  const totalPages = Math.ceil(pokemonData.length / cardsPerPage);
-
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
   };
@@ -174,6 +173,7 @@ const App = () => {
   const indexOfLastCard = currentPage * cardsPerPage;
   const indexOfFirstCard = indexOfLastCard - cardsPerPage;
   const currentPokemonData = pokemonData.slice(indexOfFirstCard, indexOfLastCard);
+  const totalPages = Math.ceil(pokemonData.length / cardsPerPage);
 
   return (
     <div>
@@ -183,9 +183,9 @@ const App = () => {
         ))}
       </div>
       <Pagination
-        totalRecords={pokemonData.length}
         currentPage={currentPage}
         totalPages={totalPages}
+        pageNeighbours={pageNeighbours}
         handlePageChange={handlePageChange}
       />
     </div>
