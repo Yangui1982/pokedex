@@ -183,6 +183,7 @@ const App = () => {
         ))}
       </div>
       <Pagination
+        totalRecords={pokemonData.length}
         currentPage={currentPage}
         totalPages={totalPages}
         handlePageChange={handlePageChange}

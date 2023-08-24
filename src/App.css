@@ -102,18 +102,35 @@ button {
   all: initial;
 
   /* Empêcher les styles du navigateur de s'appliquer */
-  appearance: none;
-  -moz-appearance: none;
-  -webkit-appearance: none;
+  appearance: none !important;
+  -moz-appearance: none !important;
+  -webkit-appearance: none !important;
 
   /* Réinitialisation des styles spécifiques au bouton (facultatif) */
   /* ... */
-  font-family: 'pokes', sans-serif;
-  font-size: 35px;
-  width: 40px;
+  font-family: 'pokes', sans-serif !important;
+  font-size: 35px !important;
+  width: 40px !important;
+}
+
+button:focus{
+  outline: 1px dotted !important;
 }
 
 h2{
   margin-top: 0;
   margin-bottom: 0px;
+}
+
+
+
+.current-page {
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
+
+ul.pagination {
+  margin-top: 0;
+  margin-bottom: 0;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
